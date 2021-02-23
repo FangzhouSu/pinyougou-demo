@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>品优购商城-综合网购首选-正品低价、价格暴涨、配送及时、轻松购物！</title>
+    <!-- 网站说明 -->
+    <!-- SEO人员会写这个的内容~ -->
+    <meta name="description" content="品优购商城-专业的综合网上购物商城 销售家电 数码产品 家居百货 服装服饰">
+    <!-- 关键字 -->
+    <!-- 同样是SEO 人员写这里的内容 -->
+    <meta name="keywords" content="网上购物，网上商城，手机，笔记本，电脑，MP3，CD，VCD，DV，品优购">
+    <!-- favicon图标放在网站的根目录下的同时也要link这行 -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- 引入初始化样式文件 -->
+    <link rel="stylesheet" href="css/base.css">
+    <!-- 引入公共样式文件 -->
+    <link rel="stylesheet" href="css/common.css">
+    <!-- 引入首页专属的样式文件 -->
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+    <!-- 快捷导航模块 -->
+    <section class="shortcut">
+        <div class="w">
+            <div class="fl">
+                <ul>
+                    <li>品优购欢迎您!&nbsp;</li>
+                    <li>
+                        请<a href="#">登录</a>&nbsp;<a href="register.html" class="style_red">免费注册</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="fr">
+                <ul>
+                    <li>我的订单</li>
+                    <li></li>
+                    <li class="arrow-icon">我的品优购</li>
+                    <li></li>
+                    <li>品优购会员</li>
+                    <li></li>
+                    <li>企业采购</li>
+                    <li></li>
+                    <li class="arrow-icon">关注品优购</li>
+                    <li></li>
+                    <li class="arrow-icon">客户服务</li>
+                    <li></li>
+                    <li class="arrow-icon">网站导航</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- header头部模块制作start -->
+    <header class="header w">
+        <!-- 1.logo模块 -->
+        <div class="logo">
+            <h1>
+                <!-- 用于SEO优化 -->
+                <!-- 放个h1标签 提权 告诉搜索引擎我很重要！
+                h1中放个链接 点一下就回首页 -->
+                <a href="index.html" title="品优购商城">品优购商城</a>
+            </h1>
+        </div>
+        <!-- 2.搜索模块 
+        用CSS3的盒子 padding margin不撑开盒子 -->
+        <div class="search">
+            <!-- <input type="search" name="" id="" value="请输入想查询的商品">
+            这个的效果是————输入框中的文字是实体的 -->
+            <input type="search" name="" id="" placeholder="请输入想查询的商品">
+            <button>搜索</button>
+        </div>
+        <!-- 3.热词模块 -->
+        <div class="hotwords">
+            <!-- 做链接 用a标签 -->
+            <a href="#" class="style_red">优惠购首发</a>
+            <a href="#">亿元优惠</a>
+            <a href="#">9.9元团购</a>
+            <a href="#">美满99减30</a>
+            <a href="#">办公用品</a>
+            <a href="#">电脑</a>
+            <a href="#">通信</a>
+        </div>
+        <!-- 4.购物车模块 -->
+        <div class="shopcar">
+            我的购物车
+            <i class="count">8888</i>
+        </div>
+    </header>
+    <!-- header头部模块制作end -->
+
+    <!-- nav模块制作start -->
+    <nav class="nav">
+        <div class="w">
+            <!-- 1号盒子左侧浮动 包括了dt dd两个部分-->
+            <div class="dropdown">
+                <!-- “全部商品分类” -->
+                <div class="dt">
+                    全部商品分类
+                </div>
+                <!-- 商品的详细分类 -->
+                <div class="dd">
+                    <ul>
+                        <!-- 为了做出“点击具体字有跳转”的效果
+                        还需要对单独的"手机""数码""家用电脑"进行标签的指引 -->
+                        <!-- 如下所示 -->
+                        <li>
+                            <a href="list.html">手机</a><a>、</a><a href="2">数码</a><a>、</a><a href="3">电脑</a>
+                        </li>
+                        <!-- 如上所示 -->
+                        <li><a href="#">家用电器</a></li>
+                        <li><a href="#">电脑、办公</a> </li>
+                        <li><a href="#">家居、家具、家装、厨具</a> </li>
+                        <li><a href="#">男装、女装、童装、内衣</a> </li>
+                        <li><a href="#">个户化妆、清洁用品、宠物</a> </li>
+                        <li><a href="#">鞋靴、箱包、珠宝、奢侈品</a> </li>
+                        <li><a href="#">运动户外、钟表</a> </li>
+                        <li><a href="#">汽车、汽车用品</a> </li>
+                        <li><a href="#">母婴、玩具乐器</a> </li>
+                        <li><a href="#">食品、酒类、生鲜、特产</a> </li>
+                        <li><a href="#">医药保健</a> </li>
+                        <li><a href="#">图书、音像、电子书</a> </li>
+                        <li><a href="#">彩票、旅行、充值、票务</a> </li>
+                        <li><a href="#">理财、众筹、白条、保险</a> </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 2号盒子左侧浮动 navitems 导航栏组 -->
+            <div class="navitems">
+                <ul>
+                    <li>
+                        <a href="#">服装城</a>
+                    </li>
+                    <li>
+                        <a href="#">全球购</a>
+                    </li>
+                    <li>
+                        <a href="#">美妆世界</a>
+                    </li>
+                    <li>
+                        <a href="#">数码天地</a>
+                    </li>
+                    <li>
+                        <a href="#">学习教辅</a>
+                    </li>
+                    <li>
+                        <a href="#">编程真快乐</a>
+                    </li>
+                    <li>
+                        <a href="#">为啥</a>
+                    </li>
+                    <li>
+                        <a href="#" title="笑死 你快得了吧哥们儿">因为热爱</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- nav模块制作end -->
+
+    <!-- 首页特有的模块main start -->
+    <div class="w">
+        <div class="main">
+            <!-- 1.焦点图模块 -->
+            <div class="focus">
+                <img src="upload/focus1.png" alt="焦点图">
+            </div>
+            <!-- 2.快报模块 -->
+            <div class="newsflash">
+                <div class="news">
+                    <!-- 新闻头部 -->
+                    <div class="news-hd">
+                        <h5>品优购快报</h5>
+                        <a href="#" class="more">更多</a>
+                    </div>
+                    <!-- 新闻主体 -->
+                    <div class="news-bd">
+                        <ul>
+                            <li><a href="#"><strong>[重磅]</strong>我说了一堆废话但是没关系啊</a></li>
+                            <li><a href="#"><strong>[重磅]</strong>会有省略号省略掉它们的不拉不拉不拉不拉</a></li>
+                            <li><a href="#"><strong>[重磅]</strong>窝窝头</a></li>
+                            <li><a href="#"><strong>[重磅]</strong>一块钱四个</a></li>
+                            <li><a href="#"><strong>[重磅]</strong>嘿嘿！</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="lifeservice">
+                    <ul>
+                        <li>
+                            <i></i>
+                            <p>话费</p>
+                        </li>
+                        <li>
+                            <i></i>
+                            <p>话费</p>
+                        </li>
+                        <li>
+                            <i></i>
+                            <p>话费</p>
+                        </li>
+                        <li>
+                            <i></i>
+                            <p>话费</p>
+                        </li>
+                        <li>
+                            <i></i>
+                            <p>话费</p>
+                        </li>
+                        <li>
+                            <i></i>
+                            <p>话费</p>
+                        </li>
+                        <li>
+                            <i></i>
+                            <p>话费</p>
+                        </li>
+                        <li>
+                            <i></i>
+                            <p>话费</p>
+                        </li>
+                        <li>
+                            <i></i>
+                            <p>话费</p>
+                        </li>
+                        <li>
+                            <i></i>
+                            <p>话费</p>
+                        </li>
+                        <li>
+                            <i></i>
+                            <p>话费</p>
+                        </li>
+                        <li>
+                            <i></i>
+                            <p>话费</p>
+                        </li>
+                        <li>
+                            <i></i>
+                            <p>话费</p>
+                        </li>
+                        <li>
+                            <i></i>
+                            <p>话费</p>
+                        </li>
+                        <li>
+                            <i></i>
+                            <p>话费</p>
+                        </li>
+                        <li>
+                            <i></i>
+                            <p>话费</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bargain">
+                    <img src="upload/bargain.png " alt="广告图片">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 首页特有的模块main end -->
+
+    <!-- 推荐模块start -->
+    <div class="w recom">
+        <!-- 左浮动小盒子 -->
+        <div class="recom_hd">
+            <img src="images/recom.png" alt="">
+        </div>
+        <!-- 紧贴着第一个小盒子右边的左浮动小盒子 -->
+        <div class="recom_bd">
+            <ul>
+                <li><img src="upload/recom_03.jpg" alt=""></li>
+                <li><img src="upload/recom_03.jpg" alt=""></li>
+                <li><img src="upload/recom_03.jpg" alt=""></li>
+                <li><img src="upload/recom_03.jpg" alt=""></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 推荐模块end -->
+
+    <!-- 楼层区域的制作start -->
+    <!-- 里面放了几层的内容 点击哪个内容的导航 就滑到哪个内容 -->
+    <div class="floor">
+        <!-- 1楼 家用电器楼层 -->
+        <div class="w jiadian">
+            <!-- 头部 -->
+            <div class="box_hd">
+                <h3>家用电器</h3>
+                <!-- tab栏选项卡标签 -->
+                <div class="tab_list">
+                    <ul>
+                        <!-- 经典做导航栏~ -->
+                        <!-- 给一个公共样式 style-red -->
+                        <li> <a href="#" class="style_red">热门</a>|</li>
+                        <li><a href="#">大家电</a>|</li>
+                        <li><a href="#">生活电器</a>|</li>
+                        <li><a href="#">厨房电器</a>|</li>
+                        <li><a href="#">生活电器</a>|</li>
+                        <li><a href="#">个护健康</a>|</li>
+                        <li><a href="#">应季电器</a>|</li>
+                        <li><a href="#">空气/净水</a>|</li>
+                        <li><a href="#">新奇特</a>|</li>
+                        <li><a href="#"> 高端电器</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 主体 -->
+            <div class="box_bd">
+                <!-- tab栏选项卡标签对应的内容 -->
+                <div class="table_content">
+                    <div class="tab_list_item">
+                        <!-- 这里面再放5个内容 用5个小盒子来表示 -->
+                        <div class="col_210">
+                            <!-- 上面的小盒子 6个超链接 -->
+                            <div>
+                                <ul>
+                                    <li><a href="#">节能补贴</a></li>
+                                    <li><a href="#">补贴</a></li>
+                                    <li><a href="#">能补贴</a></li>
+                                    <li><a href="#">能补贴</a></li>
+                                    <li><a href="#">补贴</a></li>
+                                    <li><a href="#">节能补贴</a></li>
+                                </ul>
+                            </div>
+                            <!-- 下面的小盒子 放图片 -->
+                            <a href="#">
+                                <img src="upload/floor-1-1.png" alt="">
+                            </a>
+                        </div>
+                        <div class="col_329">
+                            <img src="upload/floor-1-b01.png" alt="">
+                        </div>
+                        <div class="col_221">
+                            <a href="#" class="border_bottom"><img src="upload/floor-1-2.png" alt=""></a>
+                            <a href="#"><img src="upload/floor-1-3.png" alt=""></a>
+                        </div>
+                        <div class="col_221">
+                            <a href="#"><img src="upload/floor-1-4.png" alt=""></a>
+                        </div>
+                        <div class="col_219">
+                            <a href="#" class="border_bottom"><img src="upload/floor-1-5.png" alt=""></a>
+                            <a href="#"><img src="upload/floor-1-6.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 2楼 手机通信 -->
+        <!-- 这两楼结构差不多 照着搬一下就OK -->
+        <div class="w jiadian">
+            <!-- 头部 -->
+            <div class="box_hd">
+                <h3>家用电器</h3>
+                <!-- tab栏选项卡标签 -->
+                <div class="tab_list">
+                    <ul>
+                        <!-- 经典做导航栏~ -->
+                        <!-- 给一个公共样式 style-red -->
+                        <li> <a href="#" class="style_red">热门</a>|</li>
+                        <li><a href="#">大家电</a>|</li>
+                        <li><a href="#">生活电器</a>|</li>
+                        <li><a href="#">厨房电器</a>|</li>
+                        <li><a href="#">生活电器</a>|</li>
+                        <li><a href="#">个护健康</a>|</li>
+                        <li><a href="#">应季电器</a>|</li>
+                        <li><a href="#">空气/净水</a>|</li>
+                        <li><a href="#">新奇特</a>|</li>
+                        <li><a href="#"> 高端电器</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 主体 -->
+            <div class="box_bd">
+                <!-- tab栏选项卡标签对应的内容 -->
+                <div class="table_content">
+                    <div class="tab_list_item">
+                        <!-- 这里面再放5个内容 用5个小盒子来表示 -->
+                        <div class="col_210">
+                            <!-- 上面的小盒子 6个超链接 -->
+                            <div>
+                                <ul>
+                                    <li><a href="#">节能补贴</a></li>
+                                    <li><a href="#">补贴</a></li>
+                                    <li><a href="#">能补贴</a></li>
+                                    <li><a href="#">能补贴</a></li>
+                                    <li><a href="#">补贴</a></li>
+                                    <li><a href="#">节能补贴</a></li>
+                                </ul>
+                            </div>
+                            <!-- 下面的小盒子 放图片 -->
+                            <a href="#">
+                                <img src="upload/floor-1-1.png" alt="">
+                            </a>
+                        </div>
+                        <div class="col_329">
+                            <img src="upload/floor-1-b01.png" alt="">
+                        </div>
+                        <div class="col_221">
+                            <a href="#" class="border_bottom"><img src="upload/floor-1-2.png" alt=""></a>
+                            <a href="#"><img src="upload/floor-1-3.png" alt=""></a>
+                        </div>
+                        <div class="col_221">
+                            <a href="#"><img src="upload/floor-1-4.png" alt=""></a>
+                        </div>
+                        <div class="col_219">
+                            <a href="#" class="border_bottom"><img src="upload/floor-1-5.png" alt=""></a>
+                            <a href="#"><img src="upload/floor-1-6.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3楼 以此类推... -->
+    </div>
+    <!-- 楼层区域的制作end -->
+
+    <!-- 底部模块的制作start -->
+    <footer class="footer">
+        <div class="w">
+            <!-- 1.上方的那些图标 -->
+            <div class="mod_service">
+                <ul>
+                    <li>
+                        <h5 class="icon1"></h5>
+                        <!-- 因为标准流会环绕浮动的元素 
+                            所以右侧环绕着图片的文字可以这样来设置 -->
+                        <div class="service_text1">
+                            <h4>正品保障</h4>
+                            <p>正品保障 提供发票</p>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 接下来不同的图标及文字仿照着第一个“正品保障”即可
+                        不同的图标需要我们再多创建个h5的类
+                     -->
+
+                        <h5 class="icon2"></h5>
+                        <h4>小车</h4>
+                        <p>跑贼快</p>
+                    </li>
+                    <li>
+                        <h5 class="icon3"></h5>
+                        <h4>保修</h4>
+                        <p>坏了给你修 放心</p>
+                    </li>
+                    <li>
+                        <h5 class="icon4"></h5>
+                        <h4>品质保证</h4>
+                        <p>好评如潮 物美价廉</p>
+                    </li>
+                    <li>
+                        <h5 class="icon5"></h5>
+                        <h4>客服答疑</h4>
+                        <p>有问题么亲 客服一直在哦亲</p>
+                    </li>
+                </ul>
+            </div>
+            <!--2.帮助模块 
+                下面的服务指南 帮助中心等列表-->
+            <div class="mod_help">
+                <dl>
+                    <dt>服务指南</dt>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">会员介绍</a></dd>
+                    <dd><a href="#">生活旅行/团购</a></dd>
+                    <dd><a href="#">常见问题</a></dd>
+                    <dd><a href="#">大家电</a></dd>
+                    <dd><a href="#">联系客服</a></dd>
+                </dl>
+                <dl>
+                    <dt>服务指南</dt>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">会员介绍</a></dd>
+                    <dd><a href="#">生活旅行/团购</a></dd>
+                    <dd><a href="#">常见问题</a></dd>
+                    <dd><a href="#">大家电</a></dd>
+                    <dd><a href="#">联系客服</a></dd>
+                </dl>
+                <dl>
+                    <dt>服务指南</dt>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">会员介绍</a></dd>
+                    <dd><a href="#">生活旅行/团购</a></dd>
+                    <dd><a href="#">常见问题</a></dd>
+                    <dd><a href="#">大家电</a></dd>
+                    <dd><a href="#">联系客服</a></dd>
+                </dl>
+                <dl>
+                    <dt>服务指南</dt>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">会员介绍</a></dd>
+                    <dd><a href="#">生活旅行/团购</a></dd>
+                    <dd><a href="#">常见问题</a></dd>
+                    <dd><a href="#">大家电</a></dd>
+                    <dd><a href="#">联系客服</a></dd>
+                </dl>
+                <dl>
+                    <dt>服务指南</dt>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">会员介绍</a></dd>
+                    <dd><a href="#">生活旅行/团购</a></dd>
+                    <dd><a href="#">常见问题</a></dd>
+                    <dd><a href="#">大家电</a></dd>
+                    <dd><a href="#">联系客服</a></dd>
+                </dl>
+                <dl>
+                    <dt>老板的微信</dt>
+                    <dd>
+                        <img src="images/weixin.jpg" alt=""> 欢迎来给老板发红包(亲测可扫)
+                    </dd>
+                </dl>
+
+            </div>
+
+            <!-- 3.版权信息模块 -->
+            <div class="mod_copyright">
+                <div class="links">
+                    关于我们 | <a href="images/weixin.jpg">联系我们</a> | star我的项目 | <a href="images/weixin.jpg">加</a>我个好友 | 给我寄点儿零食 | 请我吃顿饭 | 或者直接<a href="images/fukuan.jpg">资助我</a> | 蟹蟹
+                </div>
+                <div class="copyright">
+                    地址：西源大道2006号电子科技大学清水河校区 邮编：611730 电话：15620085893 传真：010-82935100 邮箱: 1773279395@qq.com <br> 京ICP备08001421号京公网安备110108007702
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- 底部模块的制作end -->
+</body>
+
+</html>

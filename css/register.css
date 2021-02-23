@@ -1,0 +1,177 @@
+.w {
+    /* 需要单独准备版心 让大盒子居中 */
+    width: 1200px;
+    /* 让注册表这个大盒子整体居中 */
+    margin: 0 auto;
+}
+
+
+/* 1.注册头部区域 */
+
+header {
+    height: 84px;
+    border-bottom: 2px solid #c81523;
+}
+
+.logo {
+    padding-top: 18px;
+}
+
+
+/* 2.注册主体区域 */
+
+.registerarea {
+    height: 522px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+.registerarea h3 {
+    height: 42px;
+    border-bottom: 1px solid #ccc;
+    background-color: #ececec;
+    padding: 0 10px;
+    line-height: 42px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.login {
+    float: right;
+    font-size: 14px;
+}
+
+.login a {
+    color: #c81523;
+}
+
+
+/* 盒子下面 */
+
+.reg_form {
+    width: 600px;
+    /* background-color: pink; */
+    margin: 50px auto 0;
+}
+
+.reg_form ul li {
+    margin-bottom: 20px;
+}
+
+.reg_form ul li label {
+    display: inline-block;
+    width: 88px;
+    /* 贴着右侧对齐 */
+    text-align: right;
+}
+
+.reg_form ul li .inp {
+    /* input是行内块元素 */
+    width: 242px;
+    height: 37px;
+    border: 1px solid #ccc;
+}
+
+.error {
+    color: #c81523;
+}
+
+.success {
+    color: green;
+}
+
+.error_icon {
+    display: inline-block;
+    /* 让图标居中显示 与文字平行 */
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    background: url(../images/error.png) no-repeat;
+}
+
+
+/* 成功的那个小图标 */
+
+.success_icon {
+    display: inline-block;
+    /* 让图标居中显示 与文字平行 */
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    background: url(../images/success.png) no-repeat;
+}
+
+
+/* 安全程度模块 */
+
+.safe {
+    padding-left: 170px;
+}
+
+.safe em {
+    padding: 0 12px;
+    color: #fff;
+}
+
+.ruo {
+    background-color: #de1111;
+    ;
+}
+
+.zhong {
+    background-color: #40b83f;
+}
+
+.qiang {
+    background-color: #f79100;
+}
+
+
+/* 同意模块和完成注册模块 */
+
+.agree {
+    padding-left: 95px;
+}
+
+.agree input {
+    vertical-align: middle;
+}
+
+.agree a {
+    color: #1ba1e6;
+}
+
+
+/* 给按钮指定一个红色背景 */
+
+.btn {
+    width: 200px;
+    height: 34px;
+    margin: 30px 0 0 70px;
+    background-color: #c81623;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+
+/* 3.底部区域 */
+
+
+/* 版权部分 */
+
+.mod_copyright {
+    text-align: center;
+}
+
+.links {
+    margin-bottom: 15px;
+}
+
+.links a {
+    margin: 0 3px;
+}
+
+.copyright {
+    line-height: 20px;
+}

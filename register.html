@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人注册</title>
+    <!-- 引入favicon图标 -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- 引入我们初始化样式文件 -->
+    <link rel="stylesheet" href="css/base.css">
+    <!-- 引入注册页专属样式文件 -->
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+    <div class="w">
+        <header>
+            <div class="logo">
+                <a href="index.html"> <img src="images/logo.png" alt=""></a>
+            </div>
+        </header>
+        <div class="registerarea">
+
+            <!-- 上盒子 -->
+            <!-- 上面部分 -->
+            <h3>
+                注册新用户
+                <div class="login">我有账号 去<a href="#">登陆</a></div>
+            </h3>
+            <!-- 下面部分 -->
+            <div class="reg_form">
+                <!-- 表单域 form
+                一点提交按钮就可以提交到想要的网址上去了 -->
+                <form action="">
+                    <ul>
+                        <!-- i盒子里放小图标 插入到span盒子中 -->
+                        <li><label for="">手机号：</label><input type="text" class="inp"><span class="error"><i class="error_icon"></i>手机号码格式不对诶 再检查一下~</span></li>
+                        <li><label for="">短信验证码：</label><input type="text" class="inp"><span class="success"><i class="success_icon"></i>短信验证码输入正确</span></li>
+                        <li><label for="">登录密码：</label><input type="text" class="inp"><span class="error"><i class="error_icon"></i>密码不符合要求哦 请重新输入~</span></li>
+                        <!-- 做一个安全程度的模块 -->
+                        <li class="safe">安全程度 <em class="ruo">弱</em> <em class="zhong">中</em> <em class="qiang">强</em></li>
+                        <li><label for="">确认密码：</label><input type="text" class="inp"><span class="error"><i class="error_icon"></i>两次输入密码不一致 请重新输入~</span></li>
+                        <li class="agree"><input type="checkbox" name="" id=""> 同意协议并注册 <a href="#">《知晓用户协议》</a></li>
+
+                        <li>
+                            <input type="submit" value="完成注册" class="btn">
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <!-- 下盒子 -->
+
+        </div>
+        <!-- 底部模块的制作start -->
+        <footer class="footer">
+
+            <div>
+                <!-- 3.版权信息模块 -->
+                <div class="mod_copyright">
+                    <div class="links">
+                        关于我们 | <a href="images/weixin.jpg">联系我们</a> | star我的项目 | <a href="images/weixin.jpg">加</a>我个好友 | 给我寄点儿零食 | 请我吃顿饭 | 或者直接<a href="images/fukuan.jpg">资助我</a> | 蟹蟹
+                    </div>
+                    <div class="copyright">
+                        地址：西源大道2006号电子科技大学清水河校区 邮编：611730 电话：15620085893 传真：010-82935100 邮箱: 1773279395@qq.com <br> 京ICP备08001421号京公网安备110108007702
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- 底部模块的制作end -->
+    </div>
+</body>
+
+</html>

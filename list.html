@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>列表页-品优购列表页</title>
+    <!-- 网站说明 -->
+    <!-- SEO人员会写这个的内容~ -->
+    <meta name="description" content="品优购商城列表页-专业的综合网上购物商城 销售家电 数码产品 家居百货 服装服饰">
+    <!-- 关键字 -->
+    <!-- 同样是SEO 人员写这里的内容 -->
+    <meta name="keywords" content="网上购物，网上商城，手机，笔记本，电脑，MP3，CD，VCD，DV，品优购">
+    <!-- favicon图标放在网站的根目录下的同时也要link这行 -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- 引入初始化样式文件 -->
+    <link rel="stylesheet" href="css/base.css">
+    <!-- 引入公共样式文件 -->
+    <link rel="stylesheet" href="css/common.css">
+    <!-- 引入列表页独有的样式文件 -->
+    <link rel="stylesheet" href="css/list.css">
+</head>
+
+<body>
+    <!-- 1.快捷导航模块 -->
+    <section class="shortcut">
+        <div class="w">
+            <div class="fl">
+                <ul>
+                    <li>品优购欢迎您!&nbsp;</li>
+                    <li>
+                        <a href="#">请登录</a>&nbsp;<a href="#" class="style_red">免费注册</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="fr">
+                <ul>
+                    <li>我的订单</li>
+                    <li></li>
+                    <li class="arrow-icon">我的品优购</li>
+                    <li></li>
+                    <li>品优购会员</li>
+                    <li></li>
+                    <li>企业采购</li>
+                    <li></li>
+                    <li class="arrow-icon">关注品优购</li>
+                    <li></li>
+                    <li class="arrow-icon">客户服务</li>
+                    <li></li>
+                    <li class="arrow-icon">网站导航</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2.header头部模块制作start 
+    list中有一些更改-->
+    <header class="header w">
+        <!-- 1.logo模块 -->
+        <div class="logo">
+            <h1>
+                <!-- 用于SEO优化 -->
+                <!-- 放个h1标签 提权 告诉搜索引擎我很重要！
+                h1中放个链接 点一下就回首页 -->
+                <a href="index.html" title="品优购商城">品优购商城</a>
+            </h1>
+        </div>
+        <!-- 1' 秒杀图标模块 -->
+        <div class="sk">
+            <img src="images/sk.png" alt="">
+        </div>
+        <!-- 2.搜索模块 
+        用CSS3的盒子 padding margin不撑开盒子 -->
+        <div class="search">
+            <!-- <input type="search" name="" id="" value="请输入想查询的商品">
+            这个的效果是————输入框中的文字是实体的 -->
+            <input type="search" name="" id="" placeholder="请输入想查询的商品">
+            <button>搜索</button>
+        </div>
+        <!-- 3.热词模块 -->
+        <div class="hotwords">
+            <!-- 做链接 用a标签 -->
+            <a href="#" class="style_red">优惠购首发</a>
+            <a href="#">亿元优惠</a>
+            <a href="#">9.9元团购</a>
+            <a href="#">美满99减30</a>
+            <a href="#">办公用品</a>
+            <a href="#">电脑</a>
+            <a href="#">通信</a>
+        </div>
+        <!-- 4.购物车模块 -->
+        <div class="shopcar">
+            我的购物车
+            <i class="count">800</i>
+        </div>
+    </header>
+    <!-- header头部模块制作end -->
+
+    <!-- 3.nav模块制作start
+    nav导航栏中有更改
+    丢掉了dropdown左盒子 和 navitems右盒子-->
+    <nav class="nav">
+        <div class="w">
+            <!-- 加粗的重点标题 -->
+            <div class="sk_list">
+                <ul>
+                    <li><a href="#">主要标题</a></li>
+                    <li><a href="#">品优购秒杀</a></li>
+                    <li><a href="#">更多优惠</a></li>
+                </ul>
+            </div>
+            <!-- 其他链接 -->
+            <div class="sk_con">
+                <ul>
+                    <li><a href="#">次级标题</a></li>
+                    <li><a href="#">别问我</a></li>
+                    <li><a href="#">为啥女鞋</a></li>
+                    <li><a href="#">底下是</a></li>
+                    <li><a href="#">手机</a></li>
+                    <li><a href="#">我不到啊</a></li>
+                    <li><a href="#">更多信息</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- nav模块制作end -->
+
+    <!-- 4.列表页专属主体模块start -->
+    <div class="w sk_container">
+        <!-- 上面的图片 -->
+        <div class="sk_hd">
+            <!-- 这张图要选中7个进行合并导出 -->
+            <img src="upload/bg_03.png" alt="">
+        </div>
+        <!-- 下面的图片细则-->
+        <div class="sk_bd">
+            <!-- 给父盒子加clearfix 或者加 overflow：hidden 
+                来清除浮动
+            因为有浮动的话 最后一张图会被文字环绕 -->
+            <ul class="clearfix">
+                <li><img src="upload/list.jpg" alt=""></li>
+                <li><img src="upload/list.jpg" alt=""></li>
+                <li><img src="upload/list.jpg" alt=""></li>
+                <li><img src="upload/list.jpg" alt=""></li>
+                <li><img src="upload/list.jpg" alt=""></li>
+                <li><img src="upload/list.jpg" alt=""></li>
+                <li><img src="upload/list.jpg" alt=""></li>
+                <li><img src="upload/list.jpg" alt=""></li>
+                <li><img src="upload/list.jpg" alt=""></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 列表页专属模块end -->
+    <!-- 底部模块的制作start -->
+    <footer class="footer">
+        <div class="w">
+            <!-- 1.上方的那些图标 -->
+            <div class="mod_service">
+                <ul>
+                    <li>
+                        <h5 class="icon1"></h5>
+                        <!-- 因为标准流会环绕浮动的元素 
+                            所以右侧环绕着图片的文字可以这样来设置 -->
+                        <div class="service_text1">
+                            <h4>正品保障</h4>
+                            <p>正品保障 提供发票</p>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 接下来不同的图标及文字仿照着第一个“正品保障”即可
+                        不同的图标需要我们再多创建个h5的类
+                     -->
+
+                        <h5 class="icon2"></h5>
+                        <h4>小车</h4>
+                        <p>跑贼快</p>
+                    </li>
+                    <li>
+                        <h5 class="icon3"></h5>
+                        <h4>保修</h4>
+                        <p>坏了给你修 放心</p>
+                    </li>
+                    <li>
+                        <h5 class="icon4"></h5>
+                        <h4>品质保证</h4>
+                        <p>好评如潮 物美价廉</p>
+                    </li>
+                    <li>
+                        <h5 class="icon5"></h5>
+                        <h4>客服答疑</h4>
+                        <p>有问题么亲 客服一直在哦亲</p>
+                    </li>
+                </ul>
+            </div>
+            <!--2.帮助模块 
+                下面的服务指南 帮助中心等列表-->
+            <div class="mod_help">
+                <dl>
+                    <dt>服务指南</dt>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">会员介绍</a></dd>
+                    <dd><a href="#">生活旅行/团购</a></dd>
+                    <dd><a href="#">常见问题</a></dd>
+                    <dd><a href="#">大家电</a></dd>
+                    <dd><a href="#">联系客服</a></dd>
+                </dl>
+                <dl>
+                    <dt>服务指南</dt>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">会员介绍</a></dd>
+                    <dd><a href="#">生活旅行/团购</a></dd>
+                    <dd><a href="#">常见问题</a></dd>
+                    <dd><a href="#">大家电</a></dd>
+                    <dd><a href="#">联系客服</a></dd>
+                </dl>
+                <dl>
+                    <dt>服务指南</dt>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">会员介绍</a></dd>
+                    <dd><a href="#">生活旅行/团购</a></dd>
+                    <dd><a href="#">常见问题</a></dd>
+                    <dd><a href="#">大家电</a></dd>
+                    <dd><a href="#">联系客服</a></dd>
+                </dl>
+                <dl>
+                    <dt>服务指南</dt>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">会员介绍</a></dd>
+                    <dd><a href="#">生活旅行/团购</a></dd>
+                    <dd><a href="#">常见问题</a></dd>
+                    <dd><a href="#">大家电</a></dd>
+                    <dd><a href="#">联系客服</a></dd>
+                </dl>
+                <dl>
+                    <dt>服务指南</dt>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">会员介绍</a></dd>
+                    <dd><a href="#">生活旅行/团购</a></dd>
+                    <dd><a href="#">常见问题</a></dd>
+                    <dd><a href="#">大家电</a></dd>
+                    <dd><a href="#">联系客服</a></dd>
+                </dl>
+                <dl>
+                    <dt>老板的微信</dt>
+                    <dd>
+                        <img src="images/weixin.jpg" alt=""> 欢迎来给老板发红包(亲测可扫)
+                    </dd>
+                </dl>
+
+            </div>
+
+            <!-- 3.版权信息模块 -->
+            <div class="mod_copyright">
+                <div class="links">
+                    关于我们 | <a href="images/weixin.jpg">联系我们</a> | star我的项目 | <a href="images/weixin.jpg">加</a>我个好友 | 给我寄点儿零食 | 请我吃顿饭 | 或者直接<a href="images/fukuan.jpg">资助我</a> | 蟹蟹
+                </div>
+                <div class="copyright">
+                    地址：西源大道2006号电子科技大学清水河校区 邮编：611730 电话：15620085893 传真：010-82935100 邮箱: 1773279395@qq.com <br> 京ICP备08001421号京公网安备110108007702
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- 底部模块的制作end -->
+</body>
+
+</html>

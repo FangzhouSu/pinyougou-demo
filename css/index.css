@@ -1,0 +1,263 @@
+.main {
+    width: 980px;
+    height: 455px;
+    /* background-color: pink; */
+    margin-left: 220px;
+    margin-top: 10px;
+}
+
+
+/* 1.焦点图 */
+
+.focus {
+    float: left;
+    width: 721px;
+    height: 455px;
+    background-color: purple;
+}
+
+
+/* 2.快报 */
+
+.newsflash {
+    /* 设置右浮动 自然而然地
+    两个盒子之间出现空隙 */
+    float: right;
+    width: 250px;
+    height: 455px;
+    /* background-color: skyblue; */
+}
+
+
+/* 新闻 */
+
+.news {
+    height: 165px;
+    /* background-color: pink; */
+}
+
+.news-hd {
+    height: 33px;
+    line-height: 33px;
+    /* 点线 dotted */
+    border-bottom: 1px dotted #e4e4e4;
+    padding: 0 15px;
+}
+
+.news-hd h5 {
+    float: left;
+    font-size: 14px;
+}
+
+.news-hd .more {
+    float: right;
+}
+
+.news-hd .more::after {
+    content: '\e920';
+    font-family: 'icomoon';
+}
+
+.news-bd {
+    /* 上边 5px的边距 左右15px的边距 */
+    padding: 5px 15px 0;
+}
+
+.news-bd ul li {
+    height: 24px;
+    line-height: 24px;
+    /* 让超出的字隐藏 */
+    overflow: hidden;
+    /* 不允许换行 */
+    white-space: nowrap;
+    /* 让超出的文字用省略号表示 */
+    text-overflow: ellipsis;
+}
+
+
+/* 生活服务 */
+
+.lifeservice {
+    /* 切除溢出的部分 */
+    overflow: hidden;
+    height: 209px;
+    /* background-color: purple; */
+    border: 1px solid #e4e4e4;
+}
+
+
+/* 4*4排列的小盒子的效果 */
+
+.lifeservice ul {
+    width: 252px;
+}
+
+.lifeservice ul li {
+    float: left;
+    width: 63px;
+    height: 71px;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    text-align: center;
+}
+
+.lifeservice ul li i {
+    /* 用精灵图调图片 */
+    display: inline-block;
+    width: 24px;
+    height: 28px;
+    background-color: pink;
+    margin-top: 12px;
+    background: url(../images/icons.png)no-repeat -19px -15px;
+}
+
+
+/* 广告 */
+
+.bargain {
+    margin-top: 5px;
+}
+
+
+/* 推荐模块start */
+
+.recom {
+    height: 163px;
+    background-color: #ebebeb;
+    margin-top: 12px;
+}
+
+.recom_hd {
+    float: left;
+    height: 163px;
+    width: 205px;
+    background-color: #5c5251;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.recom_bd {
+    float: left;
+}
+
+.recom_bd ul li {
+    /* 子绝父相 */
+    position: relative;
+    float: left;
+}
+
+.recom_bd ul li:nth-child(-n+3)::after {
+    /* 子绝父相 */
+    position: absolute;
+    content: '';
+    /* 用定位让它压住其他盒子 */
+    right: 0;
+    top: 10px;
+    width: 1px;
+    height: 145px;
+    background-color: #ddd;
+}
+
+
+/* 家用电器模块！ */
+
+.box_hd {
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+}
+
+.box_hd h3 {
+    float: left;
+    font-size: 18px;
+    color: #c81623;
+    font-weight: 400;
+}
+
+.tab_list {
+    /* 垂直居中 */
+    line-height: 30px;
+    float: right;
+}
+
+.tab_list ul li {
+    /* 元素都排成一列 那咋办嘛 
+    用浮动呗。。*/
+    float: left;
+}
+
+.tab_list ul li a {
+    /* 把宽度拉开 属性给a————点击附近区域都有效 */
+    margin: 0 15px;
+}
+
+.floor .w {
+    margin-top: 30px;
+}
+
+
+/* 开始做主体 */
+
+.box_bd {
+    height: 361px;
+    /* background-color: pink; */
+}
+
+
+/* 子代选择器用大于号（是最亲的选择器） */
+
+.tab_list_item>div {
+    float: left;
+    /* 5个div的高度都跟父亲一样高 */
+    height: 361px;
+}
+
+
+/* col是列的意思 */
+
+.col_210 {
+    width: 210px;
+    background-color: #f9f9f9;
+}
+
+.col_210 ul {
+    /* 让每个小盒子之间有空隙
+    ul给个padding-left 
+    li给个margin-right*/
+    padding-left: 12px;
+}
+
+.col_210 ul li {
+    /* 浮动起来~ */
+    float: left;
+    width: 85px;
+    height: 34px;
+    border-bottom: 1px solid #ccc;
+    /* 水平居中 */
+    text-align: center;
+    /* 垂直居中  */
+    line-height: 34px;
+    margin-right: 10px;
+}
+
+.col_329 {
+    width: 329px;
+    border-right: 1px solid #ccc;
+}
+
+.col_221 {
+    width: 221px;
+    /* 每块儿的右侧都有个灰色的竖线
+    用边框来解决 */
+    border-right: 1px solid #ccc;
+}
+
+.col_219 {
+    width: 219px;
+    border-right: 1px solid #ccc;
+}
+
+.border_bottom {
+    display: block;
+    /* 制作下边的灰色边框 */
+    border-bottom: 1px solid #ccc;
+}
